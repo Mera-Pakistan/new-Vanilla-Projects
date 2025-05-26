@@ -1,0 +1,145 @@
+
+.footer-widget p{
+
+    color: var(--soft-blue-gray);
+
+    margin-bottom: var(--margin-2xl) !important;
+}
+
+.footer-widget p span{
+
+    color: var(--neutral-white);
+
+    font-weight: var(--font-medium);
+}
+
+.widget-logo{
+
+    margin-bottom: var(--margin-2xl) !important;
+}
+
+.widget-hours li{
+
+    color: var(--soft-blue-gray);
+
+    font-size: var(--font-md);
+}
+
+
+.widget-hours li span{
+
+    color: var(--neutral-white);
+
+    font-size: var(--font-base);
+
+    font-weight: var(--font-medium);
+
+    display: var(--block);
+
+    margin-bottom: var(--margin-xs) !important;
+}
+
+
+.footer-links h3{
+
+    color: var(--neutral-white);
+
+    font-size: var(--font-lg);
+
+    font-weight: var(--font-bold);
+
+    margin-bottom: var(--margin-2xl) !important;
+}
+
+
+.footer-links ul li {
+
+    margin-bottom: var(--margin-md3) !important;
+}
+
+
+.footer-links ul li a{
+
+    text-decoration: var(--text-decoration-none);
+
+    color: var(--soft-blue-gray);
+}
+
+
+.social-links{
+
+    margin-top: var(--margin-xxl) !important;
+}
+
+
+.social-links span{
+
+    display: var(--block);
+
+    color: var(--neutral-white);
+
+    font-size: var(--font-md3);
+
+    font-weight: var(--font-bold);
+
+    margin-bottom: var(--margin-xl) !important;
+
+}
+
+
+.social-links .footer-icons{
+
+    color: var(--soft-blue-gray);
+
+    margin-right: var(--margin-lg) !important;
+
+    transition: var(--transition-default);
+}
+
+.social-links .footer-icons:hover{
+
+    color: var(--color-purple-light);
+}
+
+
+@media screen and (max-width: 1200px) {
+    
+    #footer-link1{
+
+        padding-left: var(--padding-none);
+    }
+
+    .footer-widget{
+
+        margin-bottom: var(--padding-md3) !important;
+    }
+}
+
+
+@media screen and (max-width: 991px){
+
+    .footer-links{
+
+        margin-bottom: var(--margin-md3) !important;
+    }
+
+    #footer-link1 , #footer-link2 , #footer-link3 , #footer-link4{
+
+        padding-left: var(--padding-none);
+    }
+
+    .footer-links h3{
+
+        margin-bottom: var(--margin-lg2) !important;
+    }
+
+}
+
+
+@media screen and (max-width: 767px){
+
+    .social-links{
+
+        margin-top: var(--margin-lgs) !important;
+    }
+}
