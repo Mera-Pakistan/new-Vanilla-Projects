@@ -1,0 +1,150 @@
+
+
+.service-card{
+
+    background: var(--neutral-white);
+
+    padding: var(--padding-tb-40_7-lr-30);
+
+    margin-bottom: var(--margin-3xl) !important;
+
+    border-radius: var(--radius-20);
+
+    position: var(--position-relative);
+    
+}
+
+
+.service-card:hover::after{
+
+    opacity: 1;
+}
+
+
+.service-card::after{
+
+    content: "";
+
+    background-image: var(--bg-image-url4);
+
+    background-repeat: var(--bg-no-repeat);
+
+    width: var(--width-lg2);
+
+    height: var(--height-lg2);
+
+    position: var(--position-absolute);
+
+    top: var(--pos-6-5);
+
+    right: var(--pos-6-5);
+
+    opacity: 0;
+
+    transition: var(--transition-default);
+
+}
+
+
+.service-card .icon{
+
+    margin-bottom: var(--margin-2xl) !important;
+}
+
+
+.service-card h3{
+
+    font-size: var(--font-md3);
+
+    font-weight: var(--font-bold);
+
+    margin-bottom: var(--margin-md) !important;
+}
+
+.service-card h3 a{
+
+    text-decoration: var(--text-decoration-none);
+
+    text-transform: var(--text-transform-capitalize);
+
+    color: var(--color-navy-deep);
+
+    transition: var(--transition-default);
+}
+
+.service-card h3 a:hover{
+
+    color: var(--primary-blue);
+}
+
+.service-card p{
+
+    color: var(--color-slate-blue);
+
+    line-height: var(--line-height-loose);
+
+    margin-bottom: var(--margin-lg) !important;
+}
+
+
+.services-btn{
+
+    display: var(--inline-flex);
+
+    text-decoration: var(--text-decoration-none);
+
+    font-size: calc(var(--font-sm) + 0.5px);
+
+    text-transform: var(--text-transform-capitalize);
+
+    color: var(--color-navy-deep);
+
+    font-weight: var(--font-medium);
+
+    padding-left: var(--padding-md2);
+
+    position: var(--position-relative);
+
+    transition: var(--transition-default);
+}
+
+.services-btn:hover{
+
+    color: var(--primary-blue);
+
+    padding-left: var(--padding-none);
+
+    padding-right: calc(var(--padding-xxs) + 1px);
+}
+
+.services-btn i{
+
+    font-size: var(--font-md2);
+
+    position: var(--position-absolute);
+
+    left: var(--pos-0);
+
+    top: var(--pos-50p);
+
+    transform: translateY(-50%);
+
+    transition: var(--transition-default);
+}
+
+
+.services-btn:hover i{
+
+    left: var(--pos-100p);
+}
+
+
+@media screen and (max-width: 767px) {
+    
+    .service-card{
+
+        padding: var(--padding-tb-25_7-lr-20);
+
+        margin-bottom: var(--margin-xl) !important;
+    }
+}

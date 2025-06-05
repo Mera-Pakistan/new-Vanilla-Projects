@@ -1,0 +1,147 @@
+
+.features-inner{
+
+    border: var(--border-light-lavender-thin);
+
+    border-radius: var(--radius-100);
+
+    padding: var(--padding-t50-rl-12-b-25px) !important;
+}
+
+
+.features-card{
+
+    padding: var(--padding-lg);
+
+    margin-bottom: var(--margin-xl) !important;
+
+    border-radius: var(--radius-40);
+}
+
+
+.features-card .title{
+
+    display: var(--flex);
+
+    align-items: var(--align-items-center);
+
+    margin-bottom: var(--margin-md) !important;
+}
+
+
+.features-card .title i{
+
+    font-size: var(--font-3_5xl);
+
+    font-weight: var(--font-regular);
+}
+
+
+.features-card .title h3{
+
+    font-size: var(--font-sm);
+    
+    font-weight: var(--font-bold);
+
+    text-transform: var(--text-transform-uppercase);
+
+    letter-spacing: var(--letter-spacing-14);
+
+    margin-left: var(--margin-md) !important;
+
+}
+
+
+.features-card p{
+
+    color: var(--color-slate-blue);
+
+    line-height: var(--line-height-loose);
+
+    margin-bottom: var(--margin-md3) !important;
+}
+
+.features-card .features-btn{
+
+    display: var(--inline-flex);
+
+    text-decoration: var(--text-decoration-none);
+
+    font-size: var(--margin-sm3);
+
+    font-weight: var(--font-medium);
+
+    color: var(--color-navy-deep);
+
+    text-transform: var(--text-transform-capitalize);
+
+    padding-left: var(--padding-md2);
+
+    position: var(--position-relative);
+
+    transition: var(--transition-default);
+}
+
+.features-card .features-btn i{
+
+    font-size: var(--font-md2);
+
+    position: var(--position-absolute);
+
+    left: var(--pos-0);
+
+    top: var(--pos-50p);
+
+    transform: translateY(-50%);
+
+    transition: var(--transition-default);
+
+}
+
+
+.features-card .features-btn:hover{
+
+    padding-left: var(--padding-none);
+
+   padding-right: calc(var(--padding-xxs) + 1px);
+
+    color: var(--primary-blue);
+}
+
+
+.features-card .features-btn:hover i{
+
+    left: var(--pos-100p);
+}
+
+
+#features-card1{
+
+    background: var(--color-light-blue);
+}
+
+#features-card2{
+
+    background: var(--color-mint-light);
+}
+
+#features-card3{
+
+    background: var(--color-light-violet);
+
+}
+
+#features-card4{
+
+    background: var(--color-soft-peach);
+
+}
+
+
+@media screen and (max-width: 1200px) {
+
+    .features-inner{
+
+        padding: var(--padding-25-rl-12-b-0) !important;
+    }
+}

@@ -1,0 +1,84 @@
+
+.home-content .content-heading{
+
+    margin-bottom: var(--content-heading-mb) !important;
+}
+
+
+.home-content .content-paras{
+
+    margin-bottom: var(--content-paragraph-mb) !important;
+
+    text-align: var(--content-paragraph-ta);
+}
+
+
+#feature-section , #about-section 
+
+, #service-section , #mobile-app-section 
+
+, #blog-section , #doctor-info-section
+
+{
+
+    display: var(--flex);
+
+    justify-content: var(--justify-content-center);
+
+}
+
+
+#feature-section{
+
+    padding-top: var(--padding-2xl);
+
+}
+
+
+#about-section{
+
+    padding:  var( --padding-y-5xl-x-none);
+
+}
+
+
+#service-section{
+
+    padding:  var( --padding-y-5xl-x-none);
+
+    background: var(--light-gray-blue);
+
+}
+
+
+#doctor-info-section{
+
+    padding: var(--padding-t-100-lr-0-b-75);
+}
+
+
+#mobile-app-section , #blog-section{
+
+    padding-bottom: var(--padding-5xl);
+}
+
+
+
+@media screen and (max-width: 767px) {
+
+    #blog-section , #mobile-app-section{
+
+        padding-bottom: var(--padding-2xl);
+    }
+
+    #about-section , #service-section{
+
+        padding: var(--padding-y-2xl-x-none);
+    }
+
+    #doctor-info-section{
+
+        padding: var(--padding-t-50-lr-0-b-25);
+    }
+
+}

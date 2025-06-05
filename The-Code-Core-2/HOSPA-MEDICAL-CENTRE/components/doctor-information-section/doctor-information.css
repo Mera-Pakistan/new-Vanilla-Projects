@@ -1,0 +1,267 @@
+
+.doctor-tab{
+
+    padding: var(--padding-none);
+
+    display: var(--flex);
+
+    justify-content: var(--justify-content-center);
+
+    margin-bottom: var(--margin-lg) !important;
+}
+
+.doctor-tab .tab-items{
+
+    list-style: var(--list-style-none);
+
+    margin-right: var(--margin-sm) !important;
+}
+
+.doctor-tab .tab-items .tab-links{
+
+    text-decoration: var(--text-decoration-none);
+
+    display: var(--inline-flex);
+
+    font-size: var(--font-xxs2);
+
+    font-weight: var(--font-semibold);
+
+    text-transform: var(--text-transform-uppercase);
+
+    letter-spacing: var(--letter-spacing-12);
+
+    border: var(--border-color-light-blue-thin);
+
+    color: var(--color-navy-deep);
+
+    padding: var(--padding-tb-10-lr-20);
+
+    border-radius: var(--radius-20);
+}
+
+
+.doctor-tab .tab-items .tab-links.active{
+
+    background: var(--color-light-blue);
+}
+
+.doctor-card {
+
+  margin: var(--margin-sm2) !important; 
+
+  position: var(--position-relative);
+
+}
+
+.doctor-card .doctor-image{
+
+    position: var(--position-relative);
+}
+
+.doctor-card .doctor-image img{
+
+    width: var(--width-full);
+
+    border-radius: var(--radius-20);
+}
+
+
+.swiper{
+
+    position: var(--position-relative);
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  display: none !important;
+}
+
+
+
+.custom-button-prev i,
+.custom-button-next i{
+  
+    position: var(--position-absolute);
+
+    top: var(--pos-50p);
+
+    transform: translateY(-50%);
+
+    z-index: var(--z-loader);
+
+    font-size: var(--font-lg);
+
+    display: var(--block);
+
+    width: var(--width-md2);
+
+    height: var(--height-md2);
+
+    background: var(--neutral-white);
+
+    color: var(--color-navy-deep);
+
+    border: var(--border-light-sky-blue-thin);
+
+    border-radius: var(--radius-50);
+
+    text-align: var(--text-align-center);
+
+    align-content: var(--align-content-center);
+
+    transition: var(--transition-default);
+}
+
+
+.custom-button-prev i{
+
+    left: var(--pos-0);
+
+}
+
+.custom-button-next i{
+
+    right: var(--pos-0);
+}
+
+
+.custom-button-prev i:hover,
+.custom-button-next i:hover{
+
+    background: var(--light-sky-blue);
+}
+
+
+.doctor-btn{
+
+    position: var(--position-absolute);
+
+    bottom: var(--pos-3_5);
+
+    width: var(--width-full);
+    
+    text-align: var(--text-align-center);
+}
+
+
+.doctor-btn .default-btn{
+
+    background: var(--neutral-white);
+
+    color: var(--color-emergency);
+
+    border: var(--border-emergency-thin);
+
+    transition: var(--transition-default);
+}
+
+
+.doctor-btn .default-btn:hover{
+
+    background: var(--color-emergency);
+
+    color: var(--neutral-white);
+
+}
+
+.doctor-card .doctor-content{
+
+    text-align: var(--text-align-center);
+
+    text-transform: var(--text-transform-capitalize);
+
+    color: var(--color-slate-blue);
+
+    padding-top: var(--padding-md3);
+
+}
+
+.doctor-card .doctor-content h3 a 
+
+, .doctor-card .doctor-content
+
+{
+
+    text-transform: var(--text-transform-capitalize);
+    
+}
+
+
+.doctor-card .doctor-content h3{
+
+    font-size: var(--font-md3);
+
+    font-weight: var(--font-bold);
+}
+
+.doctor-card .doctor-content h3 a{
+
+    text-decoration: var(--text-decoration-none);
+
+    color: var(--color-navy-deep);
+}
+
+.doctor-card .doctor-content span{
+
+    display: var(--block);
+
+    font-size: var(--font-base);
+
+    margin-top: var(--margin-sm) !important;
+}
+
+
+@media screen and (max-width: 991px) {
+
+    .doctor-tab{
+
+        margin-bottom: var(--margin-md) !important;
+    }
+    
+    .doctor-tab .tab-items .tab-links{
+
+        padding: calc(var(--padding-xxs) + 1px);
+
+        font-size: var(--font-xxs1);
+    }
+
+    .doctor-tab .tab-items{
+
+        margin-right: calc(var(--margin-xxs) - 3px) !important;
+
+        margin-bottom: calc(var(--margin-xxs) - 3.5px) !important;
+    }
+
+    .custom-button-prev i,
+    .custom-button-next i{
+
+        width: var(--width-xs3);
+
+        height: var(--height-xs3);
+
+        font-size: var(--font-md3);
+
+    }
+
+
+    .custom-button-prev i{
+
+        left: calc(var(--pos-5) + 6px);
+    }
+
+    .custom-button-next i{
+
+        right: calc(var(--pos-5) + 6px);
+    }
+}
+
+
+@media screen and (max-width: 576px) {
+
+    .doctor-tab{
+
+        flex-wrap: var(--flex-wrap);
+    }
+
+}

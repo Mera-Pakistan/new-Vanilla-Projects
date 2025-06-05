@@ -1,0 +1,679 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Playwrite+DK+Loopet:wght@100..400&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+
+    margin: 0 !important;
+
+    font-family: "Libre Franklin";
+}
+
+
+:root{
+
+    /* color css variables */
+
+    --primary-blue: #0b55e5;
+
+    --color-navy-deep: #020d2b;
+
+    --color-light-blue: #C4DCF3;
+
+    --color-slate-blue: #444F6F;
+
+    --soft-blue-gray: #ADB1BC;
+
+    --off-white: #F8F9FA;
+
+    --light-blue-bg: #D6EFFF;
+
+    --light-sky-blue: #8EC0EE;
+
+    --gray-text: #6C757D;
+
+    --light-gray-blue: #E1E6EB;
+
+    --skin-tone: #FAD7B5;
+
+    --hair-brown: #4B3B2A;
+
+    --link-hover-blue: #BFDFFF;
+
+    --color-purple-light: #9588E8;
+
+    --color-light-violet: #D6D2F1;
+
+    --color-mint-light: #D7ECE4;
+
+    --fresh-green: #5DB996;
+
+    --color-soft-peach: #F2DDD9;
+
+    --color-emergency: #F82828;
+
+    --neutral-white: #fff;
+
+    --color-coral: #E67A66;
+
+    --color-light-lavender: #E9E8F2;
+
+
+
+    /* font size css variables */
+
+    --font-xxs: 0.5px;
+
+    --font-xxs1: 10px;
+
+    --font-xxs2: 12px; 
+
+    --font-xs: 13px;
+
+    --font-xs2: 13.5px; 
+
+    --font-sm: 14px;
+
+    --font-md: 15px;
+
+    --font-base: 16px;
+
+    --font-md2: 17px;
+
+    --font-md3: 18px;
+
+    --font-lg: 20px;
+
+    --font-lg2: 22px;
+
+    --font-lg3: 23px;
+
+    --font-lg4: 23.5px;
+
+    --font-xl: 25px;
+
+    --font-2xl: 30px;
+
+    --font-3xl: 35px;
+
+    --font-3_5xl: 40px;
+
+    --font-4xl: 42px;
+
+    --font-5xl: 52px;
+
+    --font-6xl: 60px;
+
+    --font-xxl: 80px;
+
+    
+    /* font weight css variables */
+
+    --font-thin: 100;
+
+    --font-extralight: 200;
+
+    --font-light: 300;
+
+    --font-regular: 400;
+
+    --font-medium: 500;
+
+    --font-semibold: 600;
+
+    --font-bold: 700;
+
+    --font-extrabold: 800;
+
+    --font-ultrabold: 900;
+
+
+    /* margin css variables */
+
+    --margin-none: 0;
+
+    --margin-xxs: 5px;
+
+    --margin-xs: 7px;
+
+    --margin-s: 10px;
+
+    --margin-sm: 12px;
+
+    --margin-sm2: 13px;
+
+    --margin-sm3: 14px;
+
+    --margin-md: 15px;
+
+    --margin-md2: 17px;
+
+    --margin-md3: 18px;
+
+    --margin-lg: 20px;
+
+    --margin-lg2: 22px;
+
+    --margin-xl: 25px;
+
+    --margin-2xl: 30px;
+
+    --margin-3xl: 35px; 
+
+    --margin-4xl: 40px; 
+
+    --margin-xxl: 50px;
+
+    --margin-t-xl-rl-none-b-3xl: 25px 0 35.5px; 
+
+
+    /* padding css variables */
+
+    --padding-none: 0;
+
+    --padding-xxs: 4px;
+
+    --padding-xxs2: 8px;
+
+    --padding-xs: 10px;
+
+    --padding-xs2: 12px;
+
+    --padding-xs3: 13px;
+
+    --padding-sm: 15px;
+
+    --padding-md: 20px;
+
+    --padding-md2: 22px;
+
+    --padding-md3: 25px;
+
+    --padding-md4: 27px;
+
+    --padding-lg: 30px;
+
+    --padding-2lg: 35px;
+
+    --padding-xl: 40px;
+
+    --padding-2xl: 50px;
+
+    --padding-3xl: 55px;
+
+    --padding-4xl: 75px;
+
+    --padding-5xl: 100px;
+
+    --padding-6xl: 150px;
+
+    --padding-10xl: 250px;
+
+    --padding-11xl: 280px;
+
+    --padding-13xl: 430px;
+
+    --padding-15xl: 480px;
+
+    --padding-xxl: 500px;
+
+    --padding-2xxl: 530px;
+
+    --padding-10xl-0: 250px 0;
+
+    --padding-13xl-0: 430px 0;
+
+    --padding-15xl-0: 480px 0;
+
+    --padding-2xxl-0: 530px 0;
+
+    --padding-tb-10-lr-none: 10px 0;
+
+    --padding-y-2xl-x-none: 50px 0;
+
+    --padding-y-5xl-x-none: 100px 0;
+
+    --padding-t-100-lr-0-b-75: 100px 0px 75px;
+
+    --padding-t-50-lr-0-b-25: 50px 0px 25px;
+
+    --padding-y-sm-x-md: 15px 20px;
+
+    --padding-y-sm-x-md3: 15px 25px;
+
+    --padding-y-md-x-lg: 20px 30px;
+
+    --padding-tb-40_7-lr-30: 40.7px 30px;
+
+    --padding-tb-25_7-lr-20: 25.7px 20px;
+
+    --padding-y-lg-x-2xl: 30px 50px;
+
+    --padding-y-2xl-x-md4: 50px 28px;
+
+    --padding-y-8-x-20: 8px 20px;
+
+    --padding-tb-7-lr-15: 7px 15px;
+
+    --padding-tb-10-lr-20: 10px 20px;
+
+    --padding-tb-12-lr-20: 12px 20px;
+
+    --padding-t10-r20-b15-l30: 10px 20px 15px 30px;
+
+    --padding-t10-r20-b10-l20: 10px 20px 10px 20px;
+
+    --padding-25-rl-12-b-0: 25px 12px 0px;
+
+    --padding-t50-rl-12-b-25px: 50px 12px 25px;
+
+    --padding-tb50-rl-12: 50px 12px;
+
+    --padding-t10-r-20-b10-l-55: 10px 20px 10px 55px;
+
+    --padding-t13-r-20-b13_5-l-55: 13px 20px 13.5px 55px;
+
+    /* display css variables */
+
+    --none: none;
+
+    --block: block;
+
+    --inline-block: inline-block;
+
+    --flex: flex;
+
+    --inline-flex: inline-flex;
+
+    --flex-column: column;
+
+    --flex-wrap: wrap;
+
+    --justify-content-start: flex-start;
+
+    --justify-content-between: space-between;
+
+    --justify-content-center: center;
+
+    --align-items-start: flex-start;
+
+    --align-items-center: center;
+
+    --align-items-end: flex-end;
+
+    --place-items: center;
+
+    --align-content-center: center;
+
+
+    /* text css variables */
+
+    --text-align-default: left;
+
+    --text-align-center: center;
+
+    --text-align-right: right;
+
+    --text-decoration-none: none;
+
+    --text-transform-capitalize: capitalize;
+
+    --text-transform-uppercase: uppercase;
+
+
+    /* list style css variables */
+
+    --list-style-none: none;
+
+
+    /* border css variables */
+
+    --border-width-thin: 1px;
+
+    --border-width-regular: 2px;
+
+    --border-width-thick: 3px;
+    
+    --border-style: solid;
+
+    --border-emergency-thin : 1px solid var(--color-emergency);
+
+    --border-light-lavender-thin : 1px solid var(--color-light-lavender);
+
+    --border-purple-light-thin : 1px solid var(--color-purple-light);
+
+    --border-neutral-white-thin: 1px solid var(--neutral-white);
+
+    --border-color-light-blue-thin: 1px solid var(--color-light-blue);
+
+    --border-light-sky-blue-thin: 1px solid var(--light-sky-blue);
+
+    --border-neutral-white-regular: 2px solid var(--neutral-white);
+
+    /* border radius css variables */
+
+    --radius-10: 10px;
+
+    --radius-20: 20px;
+
+    --radius-30: 30px;
+
+    --radius-40: 40px;
+
+    --radius-50: 50px;
+
+    --radius-100: 100px;
+
+    --radius-full: 50%;
+
+
+    /* line-height css variables */
+
+    --line-height-tight: 1.2;
+
+    --line-height-snug: 1.3;
+
+    --line-height-relaxed: 1.4;
+
+    --line-height-normal: 1.5;
+
+    --line-height-loose: 1.8;
+
+
+    /* transition css variables */
+    
+    --transition-default: 0.6s all ease;
+
+
+    /* width css variables */
+
+    --logo-width-lg: 114px;
+
+    --logo-width-sm: 151px;
+
+    --width-half: 50%;
+
+    --width-full: 100%;
+
+    --width-auto: auto;
+
+    --width-xs: 24px;
+
+    --width-xs2: 25px;
+
+    --width-xs3: 30px;
+
+    --width-sm: 32px;   
+
+    --width-md: 40px;
+
+    --width-md2: 45px;    
+
+    --width-lg: 48px; 
+
+    --width-lg2: 55px; 
+
+    --width-xl: 56px; 
+
+    --width-xxl: 64px;
+    
+    --thumbnail-width: 100px;
+
+
+    /* height css variables */
+
+    --height-auto: auto;
+
+    --height-full: 100%;
+
+    --height-xs: 24px;
+    
+    --height-xs2: 25px;
+
+    --height-xs3: 30px;
+
+    --height-sm: 32px; 
+
+    --height-md: 40px;
+
+    --height-md2: 45px; 
+
+    --height-lg: 48px;
+    
+    --height-lg2: 55px;  
+
+    --height-xl: 56px;  
+
+    --height-xxl: 64px;
+
+    --card-header-height: 114px;
+
+    --thumbnail-height: 134px;
+
+    --card-body-height: 151px;
+
+    --main-content-height: 590px;
+    
+    --viewport-height: 860px;
+
+        
+    /* cursor css variables */
+
+    --cursor-style: pointer;
+
+
+    /* position css variables */
+
+    --position-relative: relative;
+
+    --position-absolute: absolute;
+
+    --position-fixed: fixed;
+
+    --pos-auto: auto;
+
+    --pos-0: 0;
+
+    --pos-1: 4px;
+
+    --pos-2: 8px;
+
+    --pos-3: 12px;
+
+    --pos-3_5: 15px;
+
+    --pos-4: 16px;
+
+    --pos-4_5: 20px;
+
+    --pos-5: 24px;
+
+    --pos-6: 32px;
+
+    --pos-6-5: 35px;
+
+    --pos-7: 40px;
+
+    --pos-8: 48px;
+
+    --pos-9: 64px;
+
+    --pos-10: 80px;
+
+    --pos-11: 90px;
+
+    --pos-12: 100px;
+
+
+
+    --pos-10p: 10%;
+
+    --pos-20p: 20%;
+
+    --pos-30p: 30%;
+
+    --pos-40p: 40%;
+
+    --pos-50p: 50%;
+
+    --pos-60p: 60%;
+
+    --pos-70p: 70%;
+
+    --pos-80p: 80%;
+
+    --pos-85p: 85%;
+
+    --pos-87p: 87%;
+
+    --pos-90p: 90%;
+
+    --pos-100p: 100%;
+
+
+    /* background variables css variables */
+
+    --bg-image-url: url('./images/slider-bg1.jpg');
+
+    --bg-image-url2: url('./images/slider-bg2.jpg');
+
+    --bg-image-url3: url('./images/slider-bg3.jpg');
+
+    --bg-image-url4: url('../../images/vector.png');
+
+    --bg-position-center: center center;
+
+    --bg-size-cover: cover;
+
+    --bg-no-repeat: no-repeat;
+
+    --bg-attachment: scroll; 
+
+    --bg-color-fallback: #f5f5f5;
+
+
+    /* z indexing variables css variables */
+
+    --z-background: 0;
+
+    --z-overlay: 1;
+
+    --z-content: 2;
+
+    --z-header: 10;
+
+    --z-dropdown: 100;
+
+    --z-modal: 1000;
+
+    --z-toast: 1100;
+
+    --z-loader: 9999;
+
+
+    /* letter spacing  css variables */
+
+    --letter-spacing-00: 0px;
+
+    --letter-spacing-01: 0.1px;
+
+    --letter-spacing-02: 0.2px;
+
+    --letter-spacing-03: 0.3px;
+
+    --letter-spacing-04: 0.4px;
+
+    --letter-spacing-05: 0.5px;
+
+    --letter-spacing-06: 0.6px;
+
+    --letter-spacing-07: 0.7px;
+
+    --letter-spacing-08: 0.8px;
+
+    --letter-spacing-09: 0.9px;
+
+    --letter-spacing-10: 1px;
+
+    --letter-spacing-11: 1.1px;
+
+    --letter-spacing-12: 1.2px;
+
+    --letter-spacing-13: 1.3px;
+
+    --letter-spacing-14: 1.4px;
+
+    --letter-spacing-15: 1.5px;
+
+    --letter-spacing-16: 1.6px;
+
+    --letter-spacing-17: 1.7px;
+
+    --letter-spacing-18: 1.8px;
+
+    --letter-spacing-19: 1.9px;
+
+    --letter-spacing-20: 2px;
+
+      
+}
+
+
+#headerTop-section{
+
+    background: var(--light-sky-blue);
+
+    display: var(--flex);
+
+    justify-content: var(--justify-content-center);
+
+}
+
+#headerMain-section{
+
+    display: var(--flex);
+
+    justify-content: var(--justify-content-center);
+
+}
+
+#footer-section{
+
+    display: var(--flex);
+
+    justify-content: var(--justify-content-center);
+
+    background: var(--color-navy-deep);
+
+    padding:  var(--padding-y-5xl-x-none);
+    
+}
+
+
+#footer-section ul{
+
+    list-style: var(--list-style-none);
+
+    padding: var(--padding-none);
+}
+
+
+@media screen and (max-width: 991px) {
+
+    #headerTop-section{
+
+        padding: var(--padding-tb-10-lr-none);
+    }
+
+
+}
+
+
+@media screen and (max-width: 767px){
+
+    #footer-section{
+
+        padding: var(--padding-y-2xl-x-none);
+        
+    }
+
+}

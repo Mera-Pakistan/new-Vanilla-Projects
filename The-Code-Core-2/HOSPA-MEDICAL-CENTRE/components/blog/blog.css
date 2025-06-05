@@ -1,0 +1,258 @@
+
+.section-title-row{
+
+    margin-bottom: var(--margin-4xl) !important;
+}
+
+.section-title .sub-heading{
+
+    display: var(--block);
+
+    font-size: var(--font-xxs2);
+
+    font-weight: var(--font-bold);
+
+    color: var(--primary-blue);
+
+    text-transform: var(--text-transform-uppercase);
+
+    letter-spacing: var(--letter-spacing-11);
+    
+    margin-bottom: var( --margin-sm) !important;
+}
+
+
+.section-title h2{
+
+    font-size: var(--font-4xl);
+
+    text-transform: var( --text-transform-capitalize);
+
+    line-height: var(--line-height-snug);
+}
+
+.section-title h2 b{
+
+    font-weight: var(--font-extrabold);
+
+}
+
+.blog-image{
+
+    position: var(--position-relative);
+
+    margin-bottom: calc(var(--margin-xl) + 2px) !important;
+}
+
+.blog-image a{
+
+    display: var(--block);
+} 
+
+.blog-image a img{
+
+    width: var(--width-full);
+
+    border-radius: var(--radius-20);
+
+}
+
+
+.blog-image .tag-btn{
+
+    display: var(--inline-block);
+
+    text-decoration: var(--text-decoration-none);
+
+    font-size: var(--font-xxs2);
+
+    font-weight: var(--font-semibold);
+
+    letter-spacing: var(--letter-spacing-12);
+
+    background: var(--color-light-blue);
+
+    color: var(--color-navy-deep);
+
+    padding: var(--padding-tb-12-lr-20);
+
+    border-radius: var(--radius-20);
+
+    position: var(--position-absolute);
+
+    left: var(--pos-2);
+
+    bottom: var(--pos-2);
+
+    transition: var(--transition-default);
+}
+
+
+.blog-image .tag-btn:hover{
+
+    background: var(--color-purple-light);
+
+    color: var(--neutral-white);
+
+}
+
+
+.meta{
+
+    display: var(--flex);
+
+    padding: var(--padding-none);
+}
+
+
+.meta li:first-child:before{
+
+    content: "-";
+
+    position: var(--position-absolute);
+
+    right: -22px;
+}
+
+
+.meta li{
+
+    list-style: var(--list-style-none);
+
+    font-size: var(--font-xxs2);
+
+    letter-spacing: var(--letter-spacing-12);
+
+    margin-right: var(--margin-3xl) !important;
+
+    position: var(--position-relative);
+
+    color: var(--color-slate-blue);
+
+    margin-bottom: var(--margin-md2) !important;
+}
+
+
+.meta .meta-time{
+
+    margin-right: var(--margin-none) !important;
+}
+
+
+.blog-content h3 a{
+
+    display: var(--block);
+
+    text-decoration: var(--text-decoration-none);
+
+    font-size: var(--font-lg4);
+
+    color: var(--color-navy-deep);
+
+    margin-bottom: var(--margin-md3) !important;
+
+    line-height: var(--line-height-relaxed);
+
+    transition: var(--transition-default);
+}
+
+
+.blog-content h3 a:hover{
+
+    color: var(--color-purple-light);
+}
+
+.blog-content .blog-btn i::before{
+
+    content: "\f061";
+
+    font-family: "Font Awesome 6 Free";
+
+    font-size: var(--font-sm);
+
+    font-weight: var(--font-ultrabold);
+
+    position: var(--position-absolute);
+
+    left: var(--pos-0);
+
+    top: var(--pos-50p);
+
+    transform: translateY(-50%);
+
+    transition: var(--transition-default);
+}
+
+.blog-content .blog-btn{
+
+    display: var(--inline-block);
+
+    text-decoration: var(--text-decoration-none);
+
+    font-size: calc(var(--margin-sm3) + 0.5px);
+
+    font-weight: var(--font-medium);
+
+    color: var(--color-navy-deep);
+
+    text-transform: var(--text-transform-capitalize);
+
+    padding-left: var(--padding-md2);
+
+    position: var(--position-relative);
+
+    transition: var(--transition-default);
+}
+
+.blog-content .blog-btn:hover{
+
+    padding-left: var(--padding-none);
+
+    padding-right: 12px;
+
+    color: var(--primary-blue);
+}
+
+.blog-content .blog-btn:hover i::before{
+
+    left: var(--pos-100p);
+}
+
+
+@media screen and (max-width: 992px) {
+
+    .blog-card{
+
+        margin-bottom: var(--margin-xl) !important;
+    }
+
+}
+
+
+@media screen and (max-width: 767px) {
+
+    .blog-card{
+
+        margin-bottom: var(--margin-xl) !important;
+    }
+
+    .section-title .sub-heading{
+
+        font-size: var(--font-xxs1);
+    }
+
+    .section-title h2{
+
+        font-size: calc(var(--font-xl) + 3px);
+    }
+
+    .meta li{
+
+        margin-bottom: var(--margin-md) !important;
+    }
+
+    .blog-content h3 a{
+
+        margin-bottom: var(--margin-md) !important;
+    }
+}
